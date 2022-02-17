@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: vw(18);
+  height: vw(64);
+  padding: 0 vw(20);
+  .icon {
+    width: vw(132);
+  }
+}

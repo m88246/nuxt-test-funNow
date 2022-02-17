@@ -1,0 +1,59 @@
+.loginPage {
+  .loginBox {
+    padding: vw(20) 0;
+    background: #F2AB39;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  p,
+  label {
+    color: white;
+    margin-bottom: vw(6);
+    font-size: vw(14);
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="number"] {
+    width: vw(180);
+    height: vw(24);
+    padding-left: vw(5);
+    font-size: vw(12);
+    background: #FFF;
+  }
+  .input-box {
+    margin-bottom: vw(20);
+  }
+  
+  input[type="radio"] {
+    margin: 0 vw(7);
+  }
+  label {
+    margin-right: vw(15);
+  }
+  
+  p.error {
+    color: rgb(255, 119, 119);
+    font-size: vw(12);
+    padding-top: vw(4);
+  }
+  .mb-20 {
+    margin-bottom: vw(30);
+  }
+  h1 {
+    color: aliceblue;
+  }
+  .btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: snow;
+    margin-bottom: vw(20);
+    font-size: vw(12);
+    line-height: vw(20);
+    border-radius: vw(20);
+  }
+}
