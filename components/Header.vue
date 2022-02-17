@@ -1,9 +1,11 @@
 <template>
   <div class="header">
-    <img class="icon" src="../assets/images/funNowIcon.svg">
-    <div>
+    <nuxt-link to="/">
+      <img class="icon" src="../assets/images/funNowIcon.svg">
+    </nuxt-link>
+    <nuxt-link to="/login" >
       <p>登入</p>
-    </div>
+    </nuxt-link>
   </div>
 </template>
 
