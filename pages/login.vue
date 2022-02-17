@@ -3,7 +3,10 @@
     <Header />
     <div class="loginPage">
       <div class="loginBox">
-        <div class="center">
+        <div class="center" v-if="isLogin">
+          <p>會員姓名: {{username}}</p>
+        </div>
+        <div class="center" v-else>
           <div class="input-box">
             <p>NAME</p>
             <input
@@ -11,16 +14,10 @@
               placeholder="輸入使用者名稱"
               v-model="user.username"
             />
-            <!-- <p v-if="error_message.username" class="error">
-              {{ error_message.username }}
-            </p> -->
           </div>
           <div class="input-box mb-20">
             <p>PASSWORD</p>
             <input type="password" placeholder="輸入密碼" v-model="user.password" />
-            <!-- <p v-if="error_message.password" class="error">
-              {{ error_message.password }}
-            </p> -->
           </div>
           <button class="btn" @click="LoginFn">登入</button>
         </div>
@@ -35,14 +32,28 @@ export default {
   data() {
     return {
       user: {
-        username: "mike",
-        password: "7654321"
+        username: "Bob",
+        password: "0000"
       },
       error_message: {
         username: "",
         password: ""
       }
     };
+  },
+  computed:{
+    isLogin(){
+      return this.$store.getters.loginState
+    },
+    username(){
+      return this.$store.getters.username
+    }
+  },
+  mounted(){
+    if(this.$localStorage.get('userData').username){
+      this.$store.dispatch('handIsLogin',true)
+      console.log('true')
+    }
   },
   methods: {
     LoginFn() {
