@@ -1,7 +1,6 @@
 <template>
   <div>
     <div>
-      <!-- <nuxt-link :to="localePath('/','zh-tw')">index</nuxt-link> -->
       <nuxt-link :to="localePath('/')">index</nuxt-link>
       <nuxt-link :to="localePath('about')">about</nuxt-link>
     </div>
@@ -16,6 +15,6 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'About'
 }
 </script>

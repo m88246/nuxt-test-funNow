@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header />
     <div class="loginPage">
       <div class="loginBox">
         <div class="center" v-if="isLogin">
