@@ -10,6 +10,8 @@
     @content;
   }
 }
+// @include breakpoint('mobile'){}
+// @include breakpoint('pc'){}
 body {
   max-width: 768px;
   margin: 0 auto;

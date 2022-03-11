@@ -1,45 +1,91 @@
 .loginPage {
   .loginBox {
-    padding: vw(20) 0;
     background: #F2AB39;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    @include breakpoint('mobile'){
+      padding: vw(20) 0;
+    }
+    @include breakpoint('pc'){
+      padding: 20px 0;
+    }
   }
   p,
   label {
     color: white;
-    margin-bottom: vw(6);
-    font-size: vw(14);
+    @include breakpoint('mobile'){
+      margin-bottom: vw(6);
+      font-size: vw(14);
+    }
+    @include breakpoint('pc'){
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
   }
   input[type="text"],
   input[type="password"],
   input[type="number"] {
-    width: vw(180);
-    height: vw(24);
-    padding-left: vw(5);
-    font-size: vw(12);
     background: #FFF;
+    @include breakpoint('mobile'){
+      width: vw(180);
+      height: vw(24);
+      padding-left: vw(5);
+      font-size: vw(12);
+    }
+    @include breakpoint('pc'){
+      width: 180px;
+      height: 24px;
+      padding-left: 5px;
+      font-size: 12px;
+    }
   }
   .input-box {
-    margin-bottom: vw(20);
+    @include breakpoint('mobile'){
+      margin-bottom: vw(20);
+    }
+    @include breakpoint('pc'){
+      margin-bottom: 20px;
+    }
   }
   
   input[type="radio"] {
-    margin: 0 vw(7);
+    @include breakpoint('mobile'){
+      margin: 0 vw(7);
+    }
+    @include breakpoint('pc'){
+      margin: 0 7px;
+    }
   }
   label {
-    margin-right: vw(15);
+    @include breakpoint('mobile'){
+      margin-right: vw(15);
+    }
+    @include breakpoint('pc'){
+      margin-right: 15px;
+    }
   }
   
   p.error {
     color: rgb(255, 119, 119);
-    font-size: vw(12);
-    padding-top: vw(4);
+    @include breakpoint('mobile'){
+      font-size: vw(12);
+      padding-top: vw(4);
+    }
+    @include breakpoint('pc'){
+      font-size: 12px;
+      padding-top: 4px;
+    }
   }
   .mb-20 {
-    margin-bottom: vw(30);
+    
+    @include breakpoint('mobile'){
+      margin-bottom: vw(30);
+    }
+    @include breakpoint('pc'){
+      margin-bottom: 30px;
+    }
   }
   h1 {
     color: aliceblue;
@@ -51,9 +97,18 @@
     align-items: center;
     width: 100%;
     background-color: snow;
-    margin-bottom: vw(20);
-    font-size: vw(12);
-    line-height: vw(20);
-    border-radius: vw(20);
+    
+    @include breakpoint('mobile'){
+      margin-bottom: vw(20);
+      font-size: vw(12);
+      line-height: vw(20);
+      border-radius: vw(20);
+    }
+    @include breakpoint('pc'){
+      margin-bottom: 20px;
+      font-size: 12px;
+      line-height: 20px;
+      border-radius: 20px;
+    }
   }
 }
