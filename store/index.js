@@ -28,6 +28,7 @@ export const mutations = {
   LoginAuth(state, res) {
     const {username, password} = res;
     this.$localStorage.set('userData', { username: username , password: password });
+    state.username = username
     state.isLogin = true
   },
   handIsLogin(state, bool) {
