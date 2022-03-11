@@ -2,10 +2,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: vw(18);
-  height: vw(64);
-  padding: 0 vw(20);
-  .icon {
-    width: vw(132);
+  @include breakpoint('mobile'){
+    font-size: vw(18);
+    height: vw(64);
+    padding: 0 vw(20);
+    .icon {
+      width: vw(132);
+    }
+  }
+  @include breakpoint('pc'){
+    font-size: 18px;
+    height: 64px;
+    padding: 0 20px;
+    .icon {
+      width: 132px;
+    }
   }
 }
