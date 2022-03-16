@@ -54,3 +54,22 @@
     }
   }
 }
+.menu-slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.menu-slide-fade-leave-active {
+  transition: all .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.menu-slide-fade-enter, .menu-slide-fade-leave-to {
+  transform: translateY(10px);
+  opacity: 0;
+}
+.select-slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.select-slide-fade-leave-active {
+  transition: all .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.select-slide-fade-enter, .menu-slide-fade-leave-to {
+  opacity: 0;
+}

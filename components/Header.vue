@@ -24,7 +24,6 @@ export default {
   },
   methods:{
     showMenu(){
-      console.log('aaa')
       this.$bus.$emit('showMenu', true)
     }
   }
