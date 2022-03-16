@@ -2,7 +2,7 @@
   <transition name="menu-slide-fade">
     <div class="menuWrap" v-show="showMenuWrap">
       <div class="title">
-        <div>選單</div>
+        <div @click="showMenuWrap=false">選單</div>
         <div class="closeBtn" @click="showMenuWrap=false">X</div>
       </div>
       <div class="languageWrap">

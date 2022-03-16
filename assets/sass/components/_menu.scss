@@ -5,9 +5,11 @@
   right: 0;
   bottom: 0;
   background: #FFF;
+  z-index: 2;
   .title, .closeBtn {
     position: relative;
     text-align: center;
+    cursor: pointer;
     @include breakpoint('mobile'){
       font-size: vw(17);
       padding: vw(20) ;
