@@ -23,13 +23,15 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/sass/main.scss',
+    'swiper/swiper-bundle.min.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/localStorage.js',
     '~/plugins/cookie.js',
-    '~/plugins/bus.js'
+    '~/plugins/bus.js',
+    { src: "~/plugins/swiper.js", ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

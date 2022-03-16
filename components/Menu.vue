@@ -53,7 +53,7 @@ export default {
           key: 'en'
         }
       ],
-      showMenuWrap: true,
+      showMenuWrap: false,
       showSelectWrap: false,
     };
   },
