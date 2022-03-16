@@ -1,0 +1,56 @@
+.menuWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFF;
+  .title, .closeBtn {
+    position: relative;
+    text-align: center;
+    @include breakpoint('mobile'){
+      font-size: vw(17);
+      padding: vw(20) ;
+    }
+    @include breakpoint('pc'){
+      font-size: 17px;
+      padding: 20px ;
+    }
+  }
+  .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .languageWrap {
+    .languageItem {
+      display: flex;
+      align-items: center;
+      background: #999;
+      cursor: pointer;
+      @include breakpoint('mobile'){
+        padding: vw(10) vw(20);
+      }
+      @include breakpoint('pc'){
+        padding: 10px 20px;
+      }
+      .icon {
+        @include breakpoint('mobile'){
+          margin-right: vw(10);
+        }
+        @include breakpoint('pc'){
+          margin-right: 10px;
+        }
+      }
+    }
+    .languageSelectWrap {
+      .languageItem {
+        background: #F4F4F5;
+        color: #333;
+      }
+      .active {
+        color: #FF5537;
+      }
+    }
+  }
+}

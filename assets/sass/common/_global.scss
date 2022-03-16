@@ -12,7 +12,8 @@
 }
 // @include breakpoint('mobile'){}
 // @include breakpoint('pc'){}
-body {
+#app {
+  position: relative;
   max-width: 768px;
   margin: 0 auto;
 }
