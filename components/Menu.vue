@@ -24,6 +24,7 @@
           </div>
         </transition>
         <nuxt-link :to="localePath('about')" class="languageItem" @click.native="showMenuWrap=!showMenuWrap">{{$t('about')}}</nuxt-link>
+        <nuxt-link :to="localePath('memberInfo')" class="languageItem" @click.native="showMenuWrap=!showMenuWrap">{{$t('member')}}</nuxt-link>
       </div>
       
       <!-- <div>
