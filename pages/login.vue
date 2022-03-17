@@ -48,12 +48,12 @@ export default {
       return this.$store.getters.username
     }
   },
-  mounted(){
-    if(this.$localStorage.get('userData').username){
-      this.$store.dispatch('handIsLogin',true)
-      console.log('true')
-    }
-  },
+  // mounted(){
+  //   if(this.$localStorage.get('userData').username){
+  //     this.$store.dispatch('handIsLogin',true)
+  //     console.log('true')
+  //   }
+  // },
   methods: {
     LoginFn() {
       this.$store.dispatch('handAuth', {

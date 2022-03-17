@@ -7,8 +7,8 @@
         </div>
       </div>
       <div class="swiper-pagination my-pagination"></div>
-      <div class="swiper-button-prev my-btn"></div>
-      <div class="swiper-button-next my-btn"></div>
+      <!-- <div class="swiper-button-prev my-btn"></div>
+      <div class="swiper-button-next my-btn"></div> -->
     </div>
   </div>
 </template>
@@ -51,6 +51,12 @@ export default {
       //     imgUrl: require("./images/banner/banner5.png")
       //   },
       // ]
+    }
+  },
+  mounted(){
+    if(this.$localStorage.get('userData').username){
+      this.$store.dispatch('handIsLogin',true)
+      console.log('true')
     }
   }
 }
