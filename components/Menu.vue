@@ -23,6 +23,7 @@
             </nuxt-link>
           </div>
         </transition>
+        <nuxt-link :to="localePath('about')" class="languageItem" @click.native="showMenuWrap=!showMenuWrap">{{$t('about')}}</nuxt-link>
       </div>
       
       <!-- <div>
