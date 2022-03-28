@@ -40,9 +40,11 @@
       }
       .icon {
         @include breakpoint('mobile'){
+          width: vw(25);
           margin-right: vw(10);
         }
         @include breakpoint('pc'){
+          width: 25px;
           margin-right: 10px;
         }
       }

@@ -2,8 +2,12 @@
   <div class="indexPage">
     <div v-swiper:mySwiper="swiperOption" class="swiper-container">
       <div class="swiper-wrapper">
-        <div v-for="(item, index) in banners" :key="index+1" class="swiper-slide banner slideItem">
-          {{item}}
+        <div 
+          v-for="(item, index) in dataImage" 
+          :key="index+1" 
+          class="swiper-slide banner slideItem"
+        >
+          <img :src="item.imgUrl">
         </div>
       </div>
       <div class="swiper-pagination my-pagination"></div>
@@ -36,21 +40,21 @@ export default {
         setWrapperSize :true,
         grabCursor : true,
       },
-      // dataImage: [
-      //   {
-      //     // 图片路径
-      //     imgUrl: require("./images/banner/banner2.png")
-      //   },
-      //   {
-      //     imgUrl: require("./images/banner/banner3.png")
-      //   },
-      //   {
-      //     imgUrl: require("./images/banner/banner4.png")
-      //   },
-      //   {
-      //     imgUrl: require("./images/banner/banner5.png")
-      //   },
-      // ]
+      dataImage: [
+        {
+          // 图片路径
+          imgUrl: require("../assets/images/swiper0.jpg")
+        },
+        {
+          imgUrl: require("../assets/images/swiper1.jpg")
+        },
+        {
+          imgUrl: require("../assets/images/swiper2.jpg")
+        },
+        {
+          imgUrl: require("../assets/images/swiper3.jpg")
+        },
+      ]
     }
   },
   mounted(){

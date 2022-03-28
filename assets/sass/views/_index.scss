@@ -1,8 +1,20 @@
 .indexPage {
+  @include breakpoint('mobile'){
+    padding-top: vw(10);
+  }
+  @include breakpoint('pc'){
+    padding-top: 10px;
+  }
   .slideItem {
-    width: 300px;
-    height: 200px;
     background: #999;
     color: #FFF;
+    @include breakpoint('mobile'){
+      width: vw(300);
+      height: vw(200);
+    }
+    @include breakpoint('pc'){
+      width: 300px;
+      height: 200px;
+    }
   }
 }
