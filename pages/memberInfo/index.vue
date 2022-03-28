@@ -1,6 +1,7 @@
 <template>
   <div class="memberInfoPage">
-    <div>會員index</div>
+    <div v-if="!isLogin">請登入</div>
+    <div v-else>會員姓名:{{username}}</div>
   </div>
 </template>
 
@@ -11,6 +12,14 @@ export default {
     return {
       
     };
-  }
+  },
+  computed:{
+    isLogin(){
+      return this.$store.getters.loginState
+    },
+    username(){
+      return this.$store.getters.username
+    }
+  },
 }
 </script>

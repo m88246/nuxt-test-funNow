@@ -1,6 +1,6 @@
 <template>
   <div class="memberInfoPage">
-    <div>會員about</div>
+    <div>會員about頁</div>
   </div>
 </template>
 
