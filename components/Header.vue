@@ -3,7 +3,7 @@
     <nuxt-link to="/">
       <img class="icon" src="../assets/images/funNowIcon.svg">
     </nuxt-link>
-    <div @click="showMenu">選單</div>
+    <div class="menu" @click="showMenu">選單</div>
     <div v-if="isLogin">{{username}} {{$t('welcome')}}</div>
     <nuxt-link to="/login" v-else>
       <p>登入</p>
